@@ -6,4 +6,5 @@ set res_cs=ExpVoices
 set ds=.
 
 :: Cleanup resources so as not to confuse Siege Editor
-del "%ds%\DSLOA\%res_cs%.dsres"
+del "%ds%\DSLOA\%res_cs% - dialog.dsres"
+del "%ds%\DSLOA\%res_cs% - voiceover.dsres"

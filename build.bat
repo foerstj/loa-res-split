@@ -18,10 +18,15 @@ set author=Johannes Förstner
 set mode=%1
 echo %mode%
 
-:: Compile resource file
+:: Compile resource files
 rmdir /S /Q "%tmp%\Bits"
-robocopy "%doc_dsloa%\Bits\sound\voices" "%tmp%\Bits\sound\voices" /E
-%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+robocopy "%doc_dsloa%\Bits\sound\voices" "%tmp%\Bits\sound\voices" /E /xf *_ack_* /xf *_select_* /xf *_attack_*
+%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - dialog.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+if %errorlevel% neq 0 pause
+
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%doc_dsloa%\Bits\sound\voices" "%tmp%\Bits\sound\voices" /E *_ack_* *_select_* *_attack_*
+%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - voiceover.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Cleanup
