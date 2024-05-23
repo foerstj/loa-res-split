@@ -1,0 +1,8 @@
+##############################
+## Definition of Sound Tree
+##############################
+
+TREE = S			, Sound					, "Sound"
+TREE = S_M			, Music					, "Music"
+TREE = S_E			, Effects				, "Sound Effects"
+TREE = S_V			, Voices				, "Voices"
