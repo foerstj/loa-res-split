@@ -1,0 +1,15 @@
+## TAT Added with DSX and Yesterhaven asset drop
+TREE = T_JNG01		, Jungle		, "Jungle"
+TREE = T_JNG01_for	, Forest		, "Forest"
+TREE = T_FOR02		, Forest_Sequoia	, "Forest Sequoia"
+TREE = T_SEA02		, Seashore_2		, "Seashore 2"
+TREE = T_Cty		, City			, "City"
+TREE = T_Cty_brdg	, Bridge		, "Bridge"
+TREE = T_Cty_Wal	, Wall			, "Wall"
+TREE = T_Cty_path	, path			, "path"
+TREE = T_Cty_Zig	, Ziggurat		, "Ziggurat"
+TREE = T_WizCty 	, Wizard_City		, "Wizard_City"
+TREE = T_WizCty_Houses 	, Houses		, "Houses"
+TREE = T_WizCty_BRDG 	, Bridge		, "Bridge"
+TREE = T_CLKRM		, CLock_Room		, "Clock_Room"
+## End TAT Add

@@ -1,0 +1,170 @@
+##############################
+## Definition of Terrain Tree (for SNO files)
+##############################
+
+TREE = T			, Terrain			, "Terrain"
+
+TREE = T_XXX			, Generic		, "Generic"
+TREE = T_XXX_WAL		, Wall			, "Wall"
+TREE = T_XXX_HAL		, Hall			, "Hall"
+TREE = T_XXX_RMP		, Ramp			, "Ramp"
+TREE = T_XXX_CNR		, Corner		, "Corner"
+TREE = T_XXX_FLR		, Floor			, "Floor"
+TREE = T_XXX_RVR		, River			, "River"
+TREE = T_XXX_LEDG		, Ledge			, "Ledge"
+TREE = T_XXX_BRDG		, Bridge		, "Bridge"
+TREE = T_XXX_ENTR		, Entrance		, "Entrance"
+TREE = T_XXX_PTH		, Path		 	, "Path"
+TREE = T_XXX_DGN		, Dungeon			, "Dungeon"
+TREE = T_XXX_FOR		, Forest		, "Forest"
+TREE = T_XXX_RUIN		, Ruins			, "Ruins"
+TREE = T_XXX_KEEP		, Keep				, "Keep"
+TREE = T_XXX_SCAFF		, Scaffolding	, "Scaffolding"
+TREE = T_XXX_STLG		, Stalagmites	, "Stalagmites"
+TREE = T_XXX_FENC		, Fence			, "Fence"
+
+TREE = T_XXX_DGN_WAL		, Wall		,   "Dungeon Wall"
+TREE = T_XXX_DGN_WAL_H2O	, H2O		,     "Dungeon Wall Water Plane"
+TREE = T_XXX_DGN_CNR		, Corner	,   "Dungeon Corner"
+TREE = T_XXX_DGN_CNR_H2O	, H2O  		,     "Dungeon Corner Water Plane"
+TREE = T_XXX_DGN_FLR		, Floor		,   "Dungeon Floor"
+TREE = T_XXX_DGN_FLR_H2O	, H2O  		,     "Dungeon Floor Water Plane"
+TREE = T_XXX_DGN_STAIR		, Stair		,   "Dungeon Stairway"
+TREE = T_XXX_DGN_STAIR_H2O	, H2O		,     "Dungeon Stairway Water Plane"
+
+TREE = T_XXX_KEEP_WALL	, Wall			,   "Keep Wall"
+TREE = T_XXX_KEEP_FLR	, Floor			,   "Keep Floor"
+TREE = T_XXX_KEEP_CNR	, Corner		,   "Keep Corner"
+TREE = T_XXX_KEEP_RUG	, Rug			,   "Keep Rug"
+
+
+TREE = T_XXX_WAL_H2O	, H2O			, "Wall Water Plane"
+TREE = T_XXX_RMP_H2O	, H2O			, "Ramp Water Plane"
+TREE = T_XXX_CNR_H2O	, H2O			, "Corner Water Plane"
+TREE = T_XXX_FLR_H2O	, H2O			, "Floor Water Plane"
+TREE = T_XXX_BRDG_H2O	, H2O			, "Bridge Water Plane"
+TREE = T_XXX_PTH_H2O	, H2O			, "Path Water Plane"
+TREE = T_XXX_HAL_H2O	, H2O			, "Hall Water Plane"
+TREE = T_XXX_STLG_H2O	, H2O			, "Stalagmites Water Plane"
+
+
+TREE = T_CE			, Castle_Ehb	   	, "Castle Ehb"
+
+TREE = T_CRY01		, Crypt_1			, "Crypt 1"
+TREE = T_CRY01_FLR  , Floor          	,   "Floor"
+TREE = T_CRY01_CNR  , Corner			,   "Corner"
+TREE = T_CRY01_WAL  , Wall           	,   "Wall"
+TREE = T_CRY01_HAL  , Hall				,   "Hall"
+TREE = T_CRY01_SEC  , Secret         	,   "Secret"
+TREE = T_CRY01_TRAP , Trap            	,   "Trap"
+TREE = T_CRY01_ROOM , Room            	,   "Room"
+TREE = T_CRY01_COVR , Cover           	,   "Cover"
+TREE = T_CRY01_STR 	, Stair           	,   "Stair"
+
+TREE = T_CD01		, Custom_Dungeon_1	, "Custom Dungeon 1"
+TREE = T_CD01_WD	, Water_Dungeon 	,   "Water Dungeon"
+
+TREE = T_GOM		, Gom_Lair			, "Gom Lair"
+
+TREE = T_FD01		, Fury_den			, "Fury den"
+
+TREE = T_DC01		, Desert_Canyon		, "Desert Canyon 1"
+
+TREE = T_SEA01		, Seashore_1		, "Seashore 1"
+
+TREE = T_LK01		, Lakeshore_1		, "Lakeshore 1"
+
+TREE = T_FOR01		, Forest_1			, "Forest 1"
+
+
+TREE = T_DGN01		, Dungeon_1			, "Dungeon 1"
+TREE = T_DGN01_CNR	, Corner			,   "Corner"
+TREE = T_DGN01_FLR	, Floor				,   "Floor"
+TREE = T_DGN01_WAL	, Wall				,   "Wall"
+TREE = T_DGN01_STR	, Stair				,   "Stair"
+
+TREE = T_DGN02			, Dungeon_2	   	, "Dungeon 2"
+TREE = T_DGN02_CNR		, Corner	   	,   "Corner"
+TREE = T_DGN02_FLR		, Floor		   	,   "Floor"
+TREE = T_DGN02_WAL		, Wall		   	,   "Wall"
+TREE = T_DGN02_STR		, Stair		   	,   "Stair"
+TREE = T_DGN02_DOR		, Door		   	,   "Doorway"
+TREE = T_DGN02_BRIDGE	, Bridge	   	,   "Bridge"
+TREE = T_DGN02_COS		, COS			,   "COS"
+TREE = T_DGN02_SIDE		, Side		   	,   "Side"
+
+  
+
+TREE = T_DM01			, Dwarven_Mine_1	, "Dwarven Mines 1"
+TREE = T_DM01_ELE		, Elevator			,   "Elevator"
+TREE = T_DM01_HAL		, Hall				,   "Hall"
+TREE = T_DM01_TRACK		, Track				,   "Track"
+TREE = T_DM01_QUARTERS	, Quarters 			,   "Quarters"
+TREE = T_DM02			, Dwarven_Mine_2	,   "Dwarven Mines 2"
+TREE = T_DM02_HAL		, Hall				,   "Hall"
+TREE = T_DM03			, Dwarven_Mine_3	,   "Dwarven Mines 3"
+TREE = T_DM03_HAL		, Hall				,   "Hall"
+
+TREE = T_FH00		, Farmhouse				, "Farmhouse"
+
+TREE = T_GYP		, Gypsy_Tents			, "Gypsy Tents"
+
+TREE = T_GI			, Goblin_Inventor		, "Goblin Inventor"
+TREE = T_GI_WAL		, Wall					,   "Wall"
+TREE = T_GI_FLR		, Floor					,   "Floor"
+TREE = T_GI_CNR		, Corner				,   "Corner"
+TREE = T_GI_WLK		, Walkway				,   "Walkway"
+TREE = T_GI_STR		, Stair					,   "Stair"
+TREE = T_GI_TRENCH	, Trench				,   "Trench"
+TREE = T_GI_FAC		, Factory				,   "Factory"
+TREE = T_GI_SWR		, Sewer					,   "Sewer"
+TREE = T_GI_DOR		, Door					,   "Door"
+TREE = T_GI_LIFT	, Lift					,   "Lift"
+TREE = T_GI_GAD		, Gadgets				,   "Gadgets"
+TREE = T_GI_TORCH	, Torch					,   "Torch"
+TREE = T_GI_PIPE	, Pipe					,   "Pipe"
+
+
+
+TREE = T_GRS01			, Grass_1			, "Grass 1"
+TREE = T_GRS01_HOUSES	, Houses			,   "Houses"
+TREE = T_GRS01_RDGE		, Stone_Ridges		,   "Stone Ridges"
+TREE = T_GRS01_FENCE	, Fences			,   "Fences"
+
+TREE = T_GRS02		, Grass_2				, "Grass 2"
+
+TREE = T_IC01		, Ice_Caves				, "Ice Caves 1"
+
+TREE = T_LC01		, Lava_Cavern			, "Lava Cavern"
+
+TREE = T_NT01		, Northern_Town			, "Northern Town 1"
+TREE = T_NT02		, Northern_Town			, "Northern Town 2"
+TREE = T_NT03		, Northern_Town			, "Northern Town 3"
+
+TREE = T_BT			, Sieged_Town			, "Sieged Town"
+
+TREE = T_SD			, Spider_Dungeon		, "Spider Dungeon"
+TREE = T_SD_CNR		, Corner				,   "Corner"
+TREE = T_SD_FLR		, Floor					,   "Floor"
+TREE = T_SD_WAL		, Wall					,   "Wall"
+
+TREE = T_SR01		, Subterranean_River	, "Subterranean River 1"
+TREE = T_SR02		, Subterranean_River	, "Subterranean River 2"
+
+TREE = T_CF	   		, Captured_Fort			, "Captured Fort"
+
+TREE = T_SWP		, Swamp					, "Swamp"
+
+TREE = T_SC01		, Snow_Customs			, "Snow Customs"
+
+TREE = T_WD01		, Water_Dungeon_1		, "Water Dungeon 1"
+
+TREE = T_TH01		, Teleport_Hub			, "Teleport Hub"
+
+TREE = T_SL			, Spiral_Ledge			, "Spiral Ledge"
+
+TREE = T_GRDN		, Garden				, "Garden"
+
+TREE = T_ICETWR		, Ice_Tower				, "Ice Tower"
+
+TREE = T_WORLD3		, GPG_World_3			, "GPG World 3"
