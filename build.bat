@@ -25,6 +25,12 @@ robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\nis" "%tmp%\Bits\art\bitmaps\gui\nis"
 robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *core*.nnk
 robocopy "%doc_dsloa%\Bits\config" "%tmp%\Bits\config" /E /xd editor
 robocopy "%doc_dsloa%\Bits\ui" "%tmp%\Bits\ui" /E
+robocopy "%doc_dsloa%\Bits\world\ai" "%tmp%\Bits\world\ai"
+robocopy "%doc_dsloa%\Bits\world\contentdb" "%tmp%\Bits\world\contentdb"
+robocopy "%doc_dsloa%\Bits\world\global" "%tmp%\Bits\world\global"
+robocopy "%doc_dsloa%\Bits\world\global\formula" "%tmp%\Bits\world\global\formula" /E
+robocopy "%doc_dsloa%\Bits\world\global\moods" "%tmp%\Bits\world\global\moods" /E
+robocopy "%doc_dsloa%\Bits\world\global\sounds" "%tmp%\Bits\world\global\sounds" /E
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpCore.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
