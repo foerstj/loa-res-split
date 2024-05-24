@@ -18,6 +18,18 @@ echo %mode%
 
 :: Compile resource files
 rmdir /S /Q "%tmp%\Bits"
+robocopy "%doc_dsloa%\Bits\art\animations" "%tmp%\Bits\art\animations" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\armor" "%tmp%\Bits\art\bitmaps\armor" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\in_game\inventory" "%tmp%\Bits\art\bitmaps\gui\in_game\inventory" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\items" "%tmp%\Bits\art\bitmaps\items" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\sfx" "%tmp%\Bits\art\bitmaps\sfx" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\weapons" "%tmp%\Bits\art\bitmaps\weapons" /E
+robocopy "%doc_dsloa%\Bits\art\meshes" "%tmp%\Bits\art\meshes" /E
+::robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *terrain*.nnk
+%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpObjects.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+if %errorlevel% neq 0 pause
+
+rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\terrain" "%tmp%\Bits\art\terrain" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\terrain" "%tmp%\Bits\art\bitmaps\terrain" /E
 robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *terrain*.nnk
