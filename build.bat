@@ -79,5 +79,10 @@ robocopy "%doc_dsloa%\Bits\sound\voices" "%tmp%\Bits\sound\voices" /E *_ack_* *_
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpVoices - voiceover.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%doc_dsloa%\Bits\config\editor" "%tmp%\Bits\config\editor" /E
+%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpSiegeEditorExtras.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+if %errorlevel% neq 0 pause
+
 :: Cleanup
 rmdir /S /Q "%tmp%\Bits"
