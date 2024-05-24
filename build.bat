@@ -37,6 +37,7 @@ if %errorlevel% neq 0 pause
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\animations" "%tmp%\Bits\art\animations" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\armor" "%tmp%\Bits\art\bitmaps\armor" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\characters" "%tmp%\Bits\art\bitmaps\characters" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\in_game\inventory" "%tmp%\Bits\art\bitmaps\gui\in_game\inventory" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\items" "%tmp%\Bits\art\bitmaps\items" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\sfx" "%tmp%\Bits\art\bitmaps\sfx" /E
