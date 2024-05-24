@@ -26,6 +26,12 @@ robocopy "%doc_dsloa%\Bits\art\bitmaps\sfx" "%tmp%\Bits\art\bitmaps\sfx" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\weapons" "%tmp%\Bits\art\bitmaps\weapons" /E
 robocopy "%doc_dsloa%\Bits\art\meshes" "%tmp%\Bits\art\meshes" /E
 robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *objects*.nnk
+robocopy "%doc_dsloa%\Bits\world\ai\jobs" "%tmp%\Bits\world\ai\jobs" /E
+robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /E
+robocopy "%doc_dsloa%\Bits\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /E
+robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /E
+robocopy "%doc_dsloa%\Bits\world\global\skins" "%tmp%\Bits\world\global\skins" /E
+robocopy "%doc_dsloa%\Bits\world\global\skrits" "%tmp%\Bits\world\global\skrits" /E
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpObjects.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
