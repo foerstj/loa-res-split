@@ -12,10 +12,6 @@ TREE = B, Bitmaps,	"Bitmaps"
 
 TREE = B_EM			, Envmaps	, "Environment Maps"
 
-	####### Decals
-
-TREE = B_D			, Decals	, "Decals"
-
 	####### GUI
 
 TREE = B_GUI			, GUI				, "GUI"

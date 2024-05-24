@@ -6,6 +6,10 @@
 
 TREE = B, Bitmaps,	"Bitmaps"
 
+	####### Decals
+
+TREE = B_D			, Decals	, "Decals"
+
 
 	####### Terrain Textures
 

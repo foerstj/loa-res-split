@@ -38,6 +38,7 @@ if %errorlevel% neq 0 pause
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\terrain" "%tmp%\Bits\art\terrain" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\terrain" "%tmp%\Bits\art\bitmaps\terrain" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\decals" "%tmp%\Bits\art\bitmaps\decals" /E
 robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *terrain*.nnk
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpTerrain.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
