@@ -18,6 +18,17 @@ echo %mode%
 
 :: Compile resource files
 rmdir /S /Q "%tmp%\Bits"
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\fonts" "%tmp%\Bits\art\bitmaps\gui\fonts" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\front_end" "%tmp%\Bits\art\bitmaps\gui\front_end" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\in_game\menus" "%tmp%\Bits\art\bitmaps\gui\in_game\menus" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\nis" "%tmp%\Bits\art\bitmaps\gui\nis" /E
+robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *core*.nnk
+robocopy "%doc_dsloa%\Bits\config" "%tmp%\Bits\config" /E /xd editor
+robocopy "%doc_dsloa%\Bits\ui" "%tmp%\Bits\ui" /E
+%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpCore.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+if %errorlevel% neq 0 pause
+
+rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\animations" "%tmp%\Bits\art\animations" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\armor" "%tmp%\Bits\art\bitmaps\armor" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\in_game\inventory" "%tmp%\Bits\art\bitmaps\gui\in_game\inventory" /E
