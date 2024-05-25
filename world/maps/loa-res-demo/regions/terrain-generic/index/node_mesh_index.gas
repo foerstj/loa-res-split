@@ -1,0 +1,31 @@
+[node_mesh_index]
+{
+	0x00100662 = t_xxx_fenc_flr-04x04-a;
+	0x00100663 = t_xxx_fenc_flr-04x08-a;
+	0x00100664 = t_xxx_fenc_flr-cnr-a;
+	0x00100665 = t_xxx_fenc_flr-end-a;
+	0x00100666 = t_xxx_fenc_flr-tee-3-way-a;
+	0x00100667 = t_xxx_fenc_flr-tee-4-way-a;
+	0x00100668 = t_xxx_fenc_flr-wall-2a-a;
+	0x00100669 = t_xxx_fenc_flr-wall-2b-a;
+	0x0010066a = t_xxx_fenc_iron-04-a;
+	0x0010066b = t_xxx_fenc_iron-08-a;
+	0x0010066c = t_xxx_fenc_iron-12-a;
+	0x0010066d = t_xxx_fenc_iron-16-a;
+	0x0010066f = t_xxx_fenc_post-ruin-a;
+	0x00100670 = t_xxx_fenc_post-stone-a;
+	0x00100671 = t_xxx_fenc_ruin-04-a;
+	0x00100672 = t_xxx_fenc_ruin-08-a;
+	0x00100673 = t_xxx_fenc_ruin-12-a;
+	0x00100674 = t_xxx_fenc_ruin-16-a;
+	0x00100675 = t_xxx_fenc_ruin-end-a;
+	0x00100676 = t_xxx_fenc_ruin-wall-2b-a;
+	0x00100677 = t_xxx_fenc_stone-04-a;
+	0x00100678 = t_xxx_fenc_stone-08-a;
+	0x00100679 = t_xxx_fenc_stone-12-a;
+	0x0010067a = t_xxx_fenc_stone-16-a;
+	0x0010067b = t_xxx_fenc_stone-end-a;
+	0x0010067c = t_xxx_fenc_stone-wall-2b-a;
+	0x001006aa = t_xxx_flr_08x08-v0;
+	0x001006e9 = t_xxx_flr_spring;
+}
