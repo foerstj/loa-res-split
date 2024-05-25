@@ -1,0 +1,12 @@
+## TAT Added with DSX and Yesterhaven asset drop
+TREE = B_I_JNG ,	Jungle ,	"Jungle Bitmaps"
+TREE = B_I_SEA ,	Sea ,	"Sea Bitmaps"
+
+TREE = M_I_JNG ,	Jungle, "Jungle"
+TREE = M_I_SEA ,	Sea,	"Sea"
+## End TAT Add
+
+################################################################################
+#### GPG Container anim
+
+Tree = A_I_JNG	,Jungle	,"Jungle"

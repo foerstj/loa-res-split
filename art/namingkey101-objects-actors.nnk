@@ -12,7 +12,6 @@ CANIMCLASS = FS6	,	"Bow & Arrow"
 CANIMCLASS = FS7	,	"Mini-gun"
 CANIMCLASS = FS8	,	"Shield"
 
-#
 ##############################
 # Animation Tree
 ##############################
@@ -205,43 +204,10 @@ TREE = A_C_NA_RA	, Raven				, "Raven"				, FS0
 TREE = A_C_NA_RT	, Rat				, "Rat"					, FS0
 TREE = A_C_NA_SG	, Seagull			, "Seagull"				, FS0
 
-# GUI
-
-TREE = A_GUI			, GUI				, "GUI"
-TREE = A_GUI_FE			, Front_end			, "Front End"
-TREE = A_GUI_FE_M		, Menus				, "Menus"
-TREE = A_GUI_FE_M_CR	, Credits			, "Credits"
-TREE = A_GUI_FE_M_IN	, Intro				, "Intro"
-TREE = A_GUI_FE_M_MN	, Main				, "Main"
-TREE = A_GUI_FE_M_MP	, Multiplayer		, "Multiplayer"
-TREE = A_GUI_FE_M_OP	, Options			, "Options"
-TREE = A_GUI_FE_M_SP	, Singleplayer		, "Singleplayer"
-
-
-# Item groups
-
-TREE = A_I			, Items			, "Items"
-TREE = A_I_CSL		, Castle		, "Castle"
-TREE = A_I_GLB		, Global		, "Global"
-TREE = A_I_GRS		, Grass			, "Grass"
-TREE = A_I_CAV		, Caves			, "Caves"
-TREE = A_I_GOB		, Goblin_Inv	, "Goblin Inventor"
-TREE = A_I_SWP		, Swamp			, "Swamp"
-TREE = A_I_ICE		, Ice			, "Ice"
-
-# SFX
-
-TREE = A_SFX		, SFX			, "Special Effect"
-TREE = A_SFX_MG		, Magic			, "Magic"
-
 
 ##############################
 ## Definition of Bitmap Tree
 ##############################
-
-	####### Root
-
-TREE = B, Bitmaps,	"Bitmaps"
 
 	####### Characters
 
@@ -271,129 +237,10 @@ TREE = B_C_GAH_FG , Farmgirl    , "Farmgirl"
 TREE = B_C_GAN_DF , Dwarf	    , "Dwarf"
 TREE = B_C_GAN_EF , Elf		    , "Elf"
 
-	####### Old style Objects  Are these obsolete yet? -- biddle
-
-TREE = B_O		, Objects	, "Objects in the old naming format"
-TREE = B_O_A	, Armor		, "Armor in the old naming format"
-TREE = B_O_W	, Weapons	, "Weapons in the old naming format"
-TREE = B_O_I	, Items		, "Items in the old naming format"
-
-	####### Armor
-
-TREE = B_A 	   		, Armor 	  , "Armor"
-TREE = B_A_HLMT		, Helmets 	  , "Helmets"
-TREE = B_A_GNTL		, Gauntlets	  , "Gauntlets"
-TREE = B_A_BOOT		, Boots		  , "Boots"
-TREE = B_A_SHD		, Shields	  , "Shields"
-
-	####### Weapons
-
-TREE = B_W		, Weapons	, "Weapons"
-TREE = B_W_ARW	, Arrow		, "Arrow"
-TREE = B_W_AXE	, Axe		, "Axe"
-TREE = B_W_BOW	, Bow		, "Bow"
-TREE = B_W_CLB	, Club		, "Club"
-TREE = B_W_CSB	, Crossbow	, "Crossbow"
-TREE = B_W_DAG	, Dagger	, "Dagger"
-TREE = B_W_HMR	, Hammer	, "Hammer"
-TREE = B_W_MCE	, Mace		, "Mace"
-TREE = B_W_MISC	, Misc		, "Misc"
-TREE = B_W_STF	, Staff		, "Staff"
-TREE = B_W_SWD	, Sword		, "Sword"
-
-	####### Items
-
-TREE = B_I		,Items			, "Items"
-TREE = B_I_CSL	, Castle		, "Castle"
-TREE = B_I_GLB	, Global		, "Global"
-TREE = B_I_GRS	, Grass			, "Grass"
-TREE = B_I_CAV	, Caves			, "Caves"
-TREE = B_I_FRM	, Farm			, "Farm"
-TREE = B_I_LAV	, Lava			, "Lava"
-TREE = B_I_GOB	, Goblin_Inv	, "Goblin Inventor"
-TREE = B_I_ICE	, Ice			, "Ice"
-TREE = B_I_DES	, Desert		, "Desert"
-TREE = B_I_SWP	, Swamp			, "Swamp"
-
-	####### SFX
-
-TREE = B_SFX		, SFX		, "Special Effects"
-
-	####### GUI
-
-TREE = B_GUI			, GUI				, "GUI"
-
-TREE = B_GUI_IG			, In_game			, "In_game"
-TREE = B_GUI_IG_I		, Inventory			,	"Inventory"
-TREE = B_GUI_IG_I_IC	, Icons				, 	"Icons"
-TREE = B_GUI_IG_I_A		, Armor				,	"Armor"
-TREE = B_GUI_IG_I_A_POS , Body_Armor		,	  "Body Armor"
-TREE = B_GUI_IG_I_A_GNTL, Gauntlet			,	  "Gauntlet"
-TREE = B_GUI_IG_I_A_HLMT, Helmet			,	  "Helmet"
-TREE = B_GUI_IG_I_A_SHD	, Shield			,	  "Shield"
-TREE = B_GUI_IG_I_A_BOOT, Boot				,	  "Boot"
-
-TREE = B_GUI_IG_I_IT	, Items				,   "Items"
-
-TREE = B_GUI_IG_I_W		, Weapons			,	"Weapons"
-TREE = B_GUI_IG_I_W_AXE	, Axe				,	  "Axe"
-TREE = B_GUI_IG_I_W_BOW	, Bow				,	  "Bow"
-TREE = B_GUI_IG_I_W_CLB	, Club				,	  "Club"
-TREE = B_GUI_IG_I_W_CSB	, Crossbow			,	  "Crossbow"
-TREE = B_GUI_IG_I_W_DGR	, Dagger			,	  "Dagger"
-TREE = B_GUI_IG_I_W_HMR	, Hammer			,	  "Hammer"
-TREE = B_GUI_IG_I_W_MCE	, Mace				,	  "Mace"
-TREE = B_GUI_IG_I_W_MSC	, Misc				,	  "Misc"
-TREE = B_GUI_IG_I_W_STF	, Staff				,	  "Staff"
-TREE = B_GUI_IG_I_W_SWD	, Sword				,	  "Sword"
-   
-
 
 ##############################
 ## Definition of Mesh Tree
 ##############################
-
-	####### Root
-
-TREE = M		, Meshes	, "Meshes"
-
-TREE = M_W		, Weapons	, "Weapons"
-
-TREE = M_W_ARW	, Arrow		, "Arrow"
-TREE = M_W_AXE	, Axe		, "Axe"
-TREE = M_W_BOW	, Bow		, "Bow"
-TREE = M_W_CLB	, Club		, "Club"
-TREE = M_W_DAG	, Dagger	, "Dagger"
-TREE = M_W_HMR	, Hammer	, "Hammer"
-TREE = M_W_MCE	, Mace		, "Mace"
-TREE = M_W_STF	, Staff		, "Staff"
-TREE = M_W_SWD	, Sword		, "Sword"
-TREE = M_W_MISC	, Misc		, "Miscellaneous"
-TREE = M_W_CSB	, Crossbow	, "Crossbow"
-
-
-TREE = M_A		, Armor		, "Armor"
-TREE = M_A_SUIT	, Suits		, "Suits"
-TREE = M_A_SHD	, Shields	, "Shields"
-TREE = M_A_BOOT	, Boots		, "Boots"
-TREE = M_A_GNTL	, Gauntlets	, "Gauntlets"
-TREE = M_A_HLMT	, Helmets	, "Helmets"
-
-TREE = M_I		, Items		, "Items"
-
-TREE = M_I_CSL	, Castle	, "Castle"
-TREE = M_I_GLB	, Global	, "Global"
-TREE = M_I_GRS	, Grass		, "Grass"
-TREE = M_I_CAV	, Caves		, "Caves"
-TREE = M_I_FRM	, Farm			, "Farm"
-TREE = M_I_LAV	, Lava			, "Lava"
-TREE = M_I_GOB	, Goblin_Inv	, "Goblin Inventor"
-TREE = M_I_ICE	, Ice			, "Ice"
-TREE = M_I_DES	, Desert		, "Desert"
-TREE = M_I_SWP	, Swamp			, "Swamp"
-
-TREE = M_SFX		, SFX		, "Special Effect"
-TREE = M_SFX_MG		, Magic		, "Magic"
 
 TREE = M_C		, Characters	, "Characters"
 

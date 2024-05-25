@@ -17,6 +17,8 @@ set mode=%1
 echo %mode%
 
 :: Compile resource files
+
+:: ExpCore
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\fonts" "%tmp%\Bits\art\bitmaps\gui\fonts" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\front_end" "%tmp%\Bits\art\bitmaps\gui\front_end" /E
@@ -34,6 +36,7 @@ robocopy "%doc_dsloa%\Bits\world\global\sounds" "%tmp%\Bits\world\global\sounds"
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpCore.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
+:: ExpObjects
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\animations" "%tmp%\Bits\art\animations" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\armor" "%tmp%\Bits\art\bitmaps\armor" /E
@@ -52,7 +55,40 @@ robocopy "%doc_dsloa%\Bits\world\global\skins" "%tmp%\Bits\world\global\skins" /
 robocopy "%doc_dsloa%\Bits\world\global\skrits" "%tmp%\Bits\world\global\skrits" /E
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpObjects.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
+:: - actors
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%doc_dsloa%\Bits\art\animations\characters" "%tmp%\Bits\art\animations\characters" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\characters" "%tmp%\Bits\art\bitmaps\characters" /E /xd body_armor
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\in_game\inventory" "%tmp%\Bits\art\bitmaps\gui\in_game\inventory" /E b_gui_ig_i_ic_c_*.*
+robocopy "%doc_dsloa%\Bits\art\meshes\characters" "%tmp%\Bits\art\meshes\characters" /E
+robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *objects-actors*.nnk
+robocopy "%doc_dsloa%\Bits\world\ai\jobs" "%tmp%\Bits\world\ai\jobs" /E
+robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /E
+robocopy "%doc_dsloa%\Bits\world\contentdb\templates\regular\actors" "%tmp%\Bits\world\contentdb\templates\regular\actors" /E
+robocopy "%doc_dsloa%\Bits\world\contentdb\templates\veteran\actors" "%tmp%\Bits\world\contentdb\templates\veteran\actors" /E
+robocopy "%doc_dsloa%\Bits\world\contentdb\templates\elite\actors" "%tmp%\Bits\world\contentdb\templates\elite\actors" /E
+robocopy "%doc_dsloa%\Bits\world\global\skins" "%tmp%\Bits\world\global\skins" /E
+%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpObjects - actors.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+if %errorlevel% neq 0 pause
+:: - items
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%doc_dsloa%\Bits\art\animations\items" "%tmp%\Bits\art\animations\items" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\armor" "%tmp%\Bits\art\bitmaps\armor" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\characters\body_armor" "%tmp%\Bits\art\bitmaps\characters\body_armor" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui\in_game\inventory" "%tmp%\Bits\art\bitmaps\gui\in_game\inventory" /E /xf b_gui_ig_i_ic_c_*.*
+robocopy "%doc_dsloa%\Bits\art\bitmaps\items" "%tmp%\Bits\art\bitmaps\items" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\sfx" "%tmp%\Bits\art\bitmaps\sfx" /E
+robocopy "%doc_dsloa%\Bits\art\bitmaps\weapons" "%tmp%\Bits\art\bitmaps\weapons" /E
+robocopy "%doc_dsloa%\Bits\art\meshes" "%tmp%\Bits\art\meshes" /E /xd characters
+robocopy "%doc_dsloa%\Bits\art" "%tmp%\Bits\art" /E *objects-items*.nnk
+robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /E
+robocopy "%doc_dsloa%\Bits\world\contentdb\templates" "%tmp%\Bits\world\contentdb\templates" /E /xd actors
+robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /E
+robocopy "%doc_dsloa%\Bits\world\global\skrits" "%tmp%\Bits\world\global\skrits" /E
+%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpObjects - items.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+if %errorlevel% neq 0 pause
 
+:: ExpTerrain
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\terrain" "%tmp%\Bits\art\terrain" /E
 robocopy "%doc_dsloa%\Bits\art\bitmaps\terrain" "%tmp%\Bits\art\bitmaps\terrain" /E
@@ -62,31 +98,37 @@ robocopy "%doc_dsloa%\Bits\world\global\siege_nodes" "%tmp%\Bits\world\global\si
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpTerrain.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
+:: ExpSoundEffects
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\sound\effects" "%tmp%\Bits\sound\effects" /E
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpSoundEffects.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
+:: ExpMusic
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\sound\music" "%tmp%\Bits\sound\music" /E
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpMusic.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
+:: ExpMovies
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\movies" "%tmp%\Bits\movies" /E
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpMovies.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
+:: ExpVoices
+:: - dialog
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\sound\voices" "%tmp%\Bits\sound\voices" /E /xf *_ack_* /xf *_select_* /xf *_attack_*
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpVoices - dialog.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
-
+:: - voiceover
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\sound\voices" "%tmp%\Bits\sound\voices" /E *_ack_* *_select_* *_attack_*
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpVoices - voiceover.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
 
+:: ExpSiegeEditorExtras
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\config\editor" "%tmp%\Bits\config\editor" /E
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\ExpSiegeEditorExtras.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"

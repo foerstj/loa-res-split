@@ -1,6 +1,23 @@
 #! VERSION = 1.01
 
 ##############################
+# Animation Tree
+##############################
+
+# GUI
+
+TREE = A_GUI			, GUI				, "GUI"
+TREE = A_GUI_FE			, Front_end			, "Front End"
+TREE = A_GUI_FE_M		, Menus				, "Menus"
+TREE = A_GUI_FE_M_CR	, Credits			, "Credits"
+TREE = A_GUI_FE_M_IN	, Intro				, "Intro"
+TREE = A_GUI_FE_M_MN	, Main				, "Main"
+TREE = A_GUI_FE_M_MP	, Multiplayer		, "Multiplayer"
+TREE = A_GUI_FE_M_OP	, Options			, "Options"
+TREE = A_GUI_FE_M_SP	, Singleplayer		, "Singleplayer"
+
+
+##############################
 ## Definition of Bitmap Tree
 ##############################
 

@@ -1,11 +1,3 @@
-## TAT Added with DSX and Yesterhaven asset drop
-TREE = B_I_JNG ,	Jungle ,	"Jungle Bitmaps"
-TREE = B_I_SEA ,	Sea ,	"Sea Bitmaps"
-
-TREE = M_I_JNG ,	Jungle, "Jungle"
-TREE = M_I_SEA ,	Sea,	"Sea"
-## End TAT Add
-
 ###############################################
 # Ed 2/20/2003 Tiger Model
 # MESH
@@ -35,7 +27,6 @@ TREE = A_C_EAM_HASSAT_COMMANDER_FS5	,FS5	,"Staff"
 
 # End Ed Add 2/20/2003
 ###############################################
-
 
 ###############################################
 # Scott
@@ -240,11 +231,6 @@ Tree = M_C_EDM_mrblg	,MarbleGolem	,MarbleGolem
 Tree = A_C_EDM_crg	,CrystalGolem	,CrystalGolem	,FS0
 Tree = A_C_EDM_aw	,AutomatonWasp	,AutomatonWasp	,FS0
 Tree = A_C_EDM_ae	,AirElemental	,AirElemental	,FSO
-
-################################################################################
-#### GPG Container anim
-
-Tree = A_I_JNG	,Jungle	,"Jungle"
 
 ###############################################################################################
 ####Paco Easter Egg
